@@ -1,0 +1,149 @@
+// 文本居中
+//.index .post-body{
+//    text-align: center !important;
+//}
+
+// 图片阴影
+.medium-zoom-image {
+  box-shadow: 0 10px 30px 0px rgba(0, 0, 0, 0.4);
+}
+// 短代码颜色
+code {
+  background: #64dfdf;
+  color:#383a42;
+}
+// 隐藏顶部黑线条
+.headband {
+  display: none;
+}
+
+//底部文字颜色
+.footer-inner {
+  color: #07031a;
+}
+
+// 选字颜色
+::selection {
+  background: rgba(0, 149, 255, 0.2);
+  color: #555;
+}
+::-moz-selection {
+  background: rgba(0, 149, 255, 0.2);
+  color: #555;
+}
+
+// 代码滑块
+.table-container {
+  scrollbar-width: thin;
+}
+.table-container::-webkit-scrollbar {
+  width: 0.5em;
+  height: 0.5em;
+}
+.table-container::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background: #00af91;
+}
+.table-container::-webkit-scrollbar-track {
+  background: none;
+}
+
+// 背景图
+body {
+  background-image: url('/images/bg.png');
+  background-repeat: repeat;
+  background-attachment: fixed;
+  //background-position: center;
+  //background-size: ;
+
+  +mobile() {
+    background-size: auto auto;
+  }
+}
+
+//透明化：自定义opacity的值。范围为0~1的小数
+//文章内容透明
+.main-inner { 
+    opacity: 0.95;
+}
+//侧边框透明
+.sidebar {
+  opacity: 0.95;
+}
+//判断保持夜间模式颜色
+@media (prefers-color-scheme: dark) {
+  body {
+.header-inner {
+  margin-top: 18px;
+  background: rgba(51,51,51,0.95);
+}
+  }
+}
+
+//菜单栏透明
+.header-inner {
+  margin-top: 18px;
+  background: rgba(255,255,255,0.95);
+}
+
+//搜索框透明
+.popup {
+  opacity: 0.95;
+}
+
+// // 顶部渐变色
+// .site-brand-container {
+// background-image: linear-gradient(356deg, #df2650, #e56948, #e8983b, #e7c223);
+// }
+
+// 添加顶部边距
+.main {
+  margin: 8px auto 0;
+}
+
+.header {
+  +mobile() {
+    padding: 8px;
+  }
+}
+//圆角计划
+.header-inner {
+  border-radius: 50px 50px 18px 18px;
+}
+.site-brand-container {
+  border-radius: 18px 18px 0 0;
+  +mobile() {
+    border-radius: 18px;
+  }
+}
+.sidebar-inner {
+  border-radius: 18px;
+}
+.back-to-top {
+  border-radius: 0 0 18px 18px;
+}
+.post-block {
+  border-radius: 18px !important;
+  margin-top: 18px;
+}
+.pagination {
+  border-radius: 18px !important;
+}
+.comments {
+  border-radius: 18px !important;
+}
+// 字体大小
+.post-body {
+  font-size: 1em;
+}
+
+// 页脚主题，hexo链接样式
+.theme-link {
+  color:#333333;
+  border-bottom: 1px solid  #333333;
+
+  &:hover {
+    color:  #333333;
+    border-bottom: 1px solid #333333;
+  }
+}
